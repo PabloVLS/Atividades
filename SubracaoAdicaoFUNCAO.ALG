@@ -1,25 +1,25 @@
 Algoritmo "semnome"
-//3. Faça um programa que contenha as seguintes funções:
-//a. menuPrincipal (com as opções de realizar
-//cálculos de adição subtração divisão e
-//multiplicação).
-//b. Uma função para cada operação descrita na letra a.
-//c. Função principal: na função principal, garante
-//que o menu é chamado até que o
-//usuário digite o valor de saída (determinado por você).
+//3. FaÃ§a um programa que contenha as seguintes funÃ§Ãµes:
+//a. menuPrincipal (com as opÃ§Ãµes de realizar
+//cÃ¡lculos de adiÃ§Ã£o subtraÃ§Ã£o divisÃ£o e
+//multiplicaÃ§Ã£o).
+//b. Uma funÃ§Ã£o para cada operaÃ§Ã£o descrita na letra a.
+//c. FunÃ§Ã£o principal: na funÃ§Ã£o principal, garante
+//que o menu Ã© chamado atÃ© que o
+//usuÃ¡rio digite o valor de saÃ­da (determinado por vocÃª).
 
 
 procedimento menuPrincipal(opcao:caractere)
 
 var
-   primeiroNumero, segundoNumero, resultado: inteiro
-   resultado1:real
+   primeiroNumero, segundoNumero, resultado: real
+
 
 inicio
-   Escreval("Digite X se deseja Fazer multiplicação")
+   Escreval("Digite X se deseja Fazer multiplicaÃ§Ã£o")
    Escreval("Digite Y se deseja Fazer Divisao")
-   Escreval("Digite A se deseja Fazer Adição")
-   Escreval("Digite S se deseja Fazer Subtração")
+   Escreval("Digite A se deseja Fazer AdiÃ§Ã£o")
+   Escreval("Digite S se deseja Fazer SubtraÃ§Ã£o")
    leia(opcao)
    se(opcao = "x")entao
       escreval("Digite o primeiro Numero:")
@@ -55,8 +55,8 @@ inicio
                escreval("Digite o segundo Numero:")
                leia(segundoNumero)
                
-               resultado1 <- subtracao(primeiroNumero, segundoNumero)
-               escreval(resultado1)
+               resultado <- subtracao(primeiroNumero, segundoNumero)
+               escreval(resultado)
 
             fimse
          fimse
@@ -65,17 +65,17 @@ inicio
 fimProcedimento
 
 
-funcao multiplicacao(a,b:inteiro):inteiro
+funcao multiplicacao(a,b:real):real
 
 var
-   soma:inteiro
+   soma:real
 inicio
    soma <- a * b
    retorne soma
 fimfuncao
 
 
-funcao divisao(a,b:inteiro):inteiro
+funcao divisao(a,b:real):real
 
 var
    soma:real
@@ -86,31 +86,24 @@ fimfuncao
 
 
 
-funcao adicao(a,b:inteiro):inteiro
+funcao adicao(a,b:real):real
 
 var
-   soma:inteiro
+   soma:real
 inicio
    soma <- a + b
    retorne soma
 fimfuncao
 
 
-funcao subtracao(a,b:inteiro):inteiro
+funcao subtracao(a,b:real):real
 
 var
-   soma:inteiro
+   soma:real
 inicio
    soma<- a - b
    retorne soma
 fimfuncao
-
-
-
-
-
-
-
 
 
 
